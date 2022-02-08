@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+$bg: #C597D6;
+$jar-width: 250px;
+$jar-height: 400px;
+
+body {
+    background-color: $bg;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    color: #eee;
+    font-size: 1.5em;
+    div {
+        position: absolute;
+    }
+}
+
+.dialogue {
+    background: rgba(0, 0, 0, .7);
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    padding: 25px 5px;
+    border-radius: 40px;
+    line-height: .5;
+}
+
+.container {
+    position: relative;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    top: -50px;
+    transform: scale(.6);
+}
+
+.jar-canvas {
+    position: absolute;
+    top: -60px;
+    .pixel {
+        position:relative;
+        z-index: 99;
+        width: 25px;
+        height: 25px;
+        float: left;
+        box-shadow: 0px 0px 1px transparent;
+    }
+    
+    .pixel:nth-child(28),
+    .pixel:nth-child(22),
+    .pixel:nth-child(21),
+    .pixel:nth-child(29),
+    .pixel:nth-child(30),
+    .pixel:nth-child(23),
+    .pixel:nth-child(20),
+    .pixel:nth-child(11),
+    .pixel:nth-child(10),
+    .pixel:nth-child(9),
+    .pixel:nth-child(1),
+    .pixel:nth-child(2),
+    .pixel:nth-child(33),
+    .pixel:nth-child(38),
+    .pixel:nth-child(48),
+    .pixel:nth-child(49),
+    .pixel:nth-child(60),
+    .pixel:nth-child(70),
+    .pixel:nth-child(80),
+    .pixel:nth-child(90),
+    .pixel:nth-child(100), 
+    .pixel:nth-child(110),
+    .pixel:nth-child(120),
+    .pixel:nth-child(130),
+    .pixel:nth-child(140),
+    .pixel:nth-child(150), 
+    .pixel:nth-child(160),
+    .pixel:nth-child(170),
+    .pixel:nth-child(161),
+    .pixel:nth-child(162),
+    .pixel:nth-child(163),
+    .pixel:nth-child(164),
+    .pixel:nth-child(165),
+    .pixel:nth-child(166),
+    .pixel:nth-child(167),
+    .pixel:nth-child(168),
+    .pixel:nth-child(169),
+    .pixel:nth-child(151),
+    .pixel:nth-child(152),
+    .pixel:nth-child(153),
+    .pixel:nth-child(154),
+    .pixel:nth-child(155),
+    .pixel:nth-child(156),
+    .pixel:nth-child(141),
+    .pixel:nth-child(142),
+    .pixel:nth-child(143),
+    .pixel:nth-child(144),
+    .pixel:nth-child(145),
+    .pixel:nth-child(142),
+    .pixel:nth-child(131), 
+    .pixel:nth-child(132),
+    .pixel:nth-child(133),
+    .pixel:nth-child(134),
+    .pixel:nth-child(135),
+    .pixel:nth-child(121),
+    .pixel:nth-child(122),
+    .pixel:nth-child(123),
+    .pixel:nth-child(124),
+    .pixel:nth-child(125),
+    .pixel:nth-child(111),
+    .pixel:nth-child(112),
+    .pixel:nth-child(113),
+    .pixel:nth-child(114),
+    .pixel:nth-child(115),
+    .pixel:nth-child(101),
+    .pixel:nth-child(102),
+    .pixel:nth-child(103),
+    .pixel:nth-child(104),
+    .pixel:nth-child(105),
+    .pixel:nth-child(91),
+    .pixel:nth-child(92),
+    .pixel:nth-child(93),
+    .pixel:nth-child(94),
+    .pixel:nth-child(95),
+    .pixel:nth-child(81),
+    .pixel:nth-child(82),
+    .pixel:nth-child(83),
+    .pixel:nth-child(71),
+    .pixel:nth-child(72),
+    .pixel:nth-child(73),
+    .pixel:nth-child(61),
+    .pixel:nth-child(62),
+    .pixel:nth-child(63),
+    .pixel:nth-child(51),
+    .pixel:nth-child(52),
+    .pixel:nth-child(42),
+    .pixel:nth-child(43){
+        background: lightblue;
+        opacity: .5;
+    }
+
+    /*bottom jar*/
+    .pixel:nth-child(180),
+    .pixel:nth-child(179),
+    .pixel:nth-child(178),
+    .pixel:nth-child(177),
+    .pixel:nth-child(176),
+    .pixel:nth-child(175),
+    .pixel:nth-child(174),
+    .pixel:nth-child(173),
+    .pixel:nth-child(172),
+    .pixel:nth-child(171){ 
+        background: lightblue;
+        opacity: 1;
+    }
+
+    .pixel:nth-child(57),
+    .pixel:nth-child(68),
+    .pixel:nth-child(78){
+        background: #fff;
+    }
+}
+
+.jar-cork {
+    width: 125px;
+    top: 80px;
+    height: 100px;
+    background: brown;
+    left: 143px;
+}
+
+.jar-lid {
+    width: 250px;
+    height: 80px;
+    top: 140px;
+    background: lightblue;
+    left: 80px;
+    opacity: .6;
+}
+
+.jar-neck {
+    width: 125px;
+    height: 100px;
+    top: 140px;
+    left: 143px;
+    background: lightblue;
+    opacity: .6;
+}
+
+.jar-container{
+    width: $jar-width;
+    height: $jar-height;
+    left: 80px;
+    bottom: 0px;
+    .glass{
+        width: 100%;
+        height: 360px;
+        top: 40px;
+        border-radius: 80px 80px 20px 20px;
+        opacity: .6;
+        z-index: 3;
+    }
+}
+
+/*Fairy release*/
+
+.container.release {
+    .jar-cork {
+        animation: openCork 3.9s forwards;
+        /*opacity: 0;*/
+    }
+
+    .fairy-wrap {
+        animation: flyUp 4.5s forwards;
+    }
+
+    #heart-one, #heart-two, #heart-three {
+        animation: heartbeat 3s 1;
+    }
+
+    .heart-container {
+        .pixel:nth-child(53),
+        .pixel:nth-child(44),
+        .pixel:nth-child(45),
+        .pixel:nth-child(46),
+        .pixel:nth-child(35),
+        .pixel:nth-child(36),
+        .pixel:nth-child(37),
+        .pixel:nth-child(38),
+        .pixel:nth-child(39),
+        .pixel:nth-child(27),
+        .pixel:nth-child(28),
+        .pixel:nth-child(30),
+        .pixel:nth-child(31){
+            background: red;
+            transition: all 1.5s ease-in;
+        }
+    }
+}
+
+/*Health*/
+
+.heart-container {
+    left: 20%;
+    top: 0px;
+    width: 250px;
+    height: 100px;
+    transform: scale(.6);
+    .canvas {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        float: left;
+        //pixels for heart
+        .pixel {
+            position: relative;
+            width: 10px;
+            height: 10px;
+            float: left;
+            box-shadow: 0px 0px 1px transparent;
+        }
+    }
+
+    #heart-one{
+        .pixel:nth-child(53),
+        .pixel:nth-child(44),
+        .pixel:nth-child(45),
+        .pixel:nth-child(46){
+            background-color: red;
+        }
+        animation: heartbeat 1s infinite;
+    }
+
+    .pixel:nth-child(61),
+    .pixel:nth-child(54),
+    .pixel:nth-child(52),
+    .pixel:nth-child(43),
+    .pixel:nth-child(47),
+    .pixel:nth-child(40),
+    .pixel:nth-child(34),
+    .pixel:nth-child(26),
+    .pixel:nth-child(32),
+    .pixel:nth-child(23),
+    .pixel:nth-child(22),
+    .pixel:nth-child(19),
+    .pixel:nth-child(20),
+    .pixel:nth-child(29){
+        background: #fff;
+    }
+
+    .pixel:nth-child(53),
+    .pixel:nth-child(44),
+    .pixel:nth-child(45),
+    .pixel:nth-child(46),
+    .pixel:nth-child(35),
+    .pixel:nth-child(36),
+    .pixel:nth-child(37),
+    .pixel:nth-child(38),
+    .pixel:nth-child(39),
+    .pixel:nth-child(27),
+    .pixel:nth-child(28),
+    .pixel:nth-child(30),
+    .pixel:nth-child(31){
+        background: transparent;
+    }
+}
+
+
+/*Fairy*/
+
+.fairy-wrap {
+    top:220px;
+    left: $jar-width/2;
+    z-index: 2;
+    animation: buzz 8.5s infinite;
+    .fairy {
+        width: 80px;
+        height: 80px;
+        background: #fff;
+        border-radius: 100%;
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        
+    }
+    .wings{
+        width: 40px;
+        height: 40px;
+        left: -30px;
+        border-radius: 85% 0%;
+        background: #f7cdff;
+        filter: none !important;
+
+        &.bottom {
+            top: 20px;
+        }
+
+        &.top {
+            top: -20px;
+            border-radius: 0% 85%;
+        }
+    }
+}
+
+@keyframes buzz {
+    0% {
+        left: $jar-width/2;
+    }
+
+    30% {
+        left: 160px;
+    }
+
+    45% {
+        top:100px;
+    }
+
+    60% {
+        left: 70px;
+    }
+
+    80% {
+        top: 220px;
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes flyUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-650px);
+    }
+}
+
+@keyframes openCork {
+    0% {
+        top: 80px;
+        transform: translateY(20px);
+    }
+    40% {
+        top: 0px;
+        left: 39px;
+        transform: rotate(-30deg); 
+        
+    }
+    75% {
+        top: 40px;
+        transform: rotate(-10deg);
+
+    }
+    100% {
+        top: 80px;
+    }
+}

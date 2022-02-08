@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
+body {
+  background-color: #C597D6;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  color: #eee;
+  font-size: 1.5em;
+}
+
+body div {
+  position: absolute;
+}
+
+.dialogue {
+  background: rgba(0, 0, 0, 0.7);
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  padding: 25px 5px;
+  border-radius: 40px;
+  line-height: .5;
+}
+
+.container {
+  position: relative;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  top: -50px;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.jar-canvas {
+  position: absolute;
+  top: -60px;
+  /*bottom jar*/
+}
+
+.jar-canvas .pixel {
+  position: relative;
+  z-index: 99;
+  width: 25px;
+  height: 25px;
+  float: left;
+  -webkit-box-shadow: 0px 0px 1px transparent;
+          box-shadow: 0px 0px 1px transparent;
+}
+
+.jar-canvas .pixel:nth-child(28),
+.jar-canvas .pixel:nth-child(22),
+.jar-canvas .pixel:nth-child(21),
+.jar-canvas .pixel:nth-child(29),
+.jar-canvas .pixel:nth-child(30),
+.jar-canvas .pixel:nth-child(23),
+.jar-canvas .pixel:nth-child(20),
+.jar-canvas .pixel:nth-child(11),
+.jar-canvas .pixel:nth-child(10),
+.jar-canvas .pixel:nth-child(9),
+.jar-canvas .pixel:nth-child(1),
+.jar-canvas .pixel:nth-child(2),
+.jar-canvas .pixel:nth-child(33),
+.jar-canvas .pixel:nth-child(38),
+.jar-canvas .pixel:nth-child(48),
+.jar-canvas .pixel:nth-child(49),
+.jar-canvas .pixel:nth-child(60),
+.jar-canvas .pixel:nth-child(70),
+.jar-canvas .pixel:nth-child(80),
+.jar-canvas .pixel:nth-child(90),
+.jar-canvas .pixel:nth-child(100),
+.jar-canvas .pixel:nth-child(110),
+.jar-canvas .pixel:nth-child(120),
+.jar-canvas .pixel:nth-child(130),
+.jar-canvas .pixel:nth-child(140),
+.jar-canvas .pixel:nth-child(150),
+.jar-canvas .pixel:nth-child(160),
+.jar-canvas .pixel:nth-child(170),
+.jar-canvas .pixel:nth-child(161),
+.jar-canvas .pixel:nth-child(162),
+.jar-canvas .pixel:nth-child(163),
+.jar-canvas .pixel:nth-child(164),
+.jar-canvas .pixel:nth-child(165),
+.jar-canvas .pixel:nth-child(166),
+.jar-canvas .pixel:nth-child(167),
+.jar-canvas .pixel:nth-child(168),
+.jar-canvas .pixel:nth-child(169),
+.jar-canvas .pixel:nth-child(151),
+.jar-canvas .pixel:nth-child(152),
+.jar-canvas .pixel:nth-child(153),
+.jar-canvas .pixel:nth-child(154),
+.jar-canvas .pixel:nth-child(155),
+.jar-canvas .pixel:nth-child(156),
+.jar-canvas .pixel:nth-child(141),
+.jar-canvas .pixel:nth-child(142),
+.jar-canvas .pixel:nth-child(143),
+.jar-canvas .pixel:nth-child(144),
+.jar-canvas .pixel:nth-child(145),
+.jar-canvas .pixel:nth-child(142),
+.jar-canvas .pixel:nth-child(131),
+.jar-canvas .pixel:nth-child(132),
+.jar-canvas .pixel:nth-child(133),
+.jar-canvas .pixel:nth-child(134),
+.jar-canvas .pixel:nth-child(135),
+.jar-canvas .pixel:nth-child(121),
+.jar-canvas .pixel:nth-child(122),
+.jar-canvas .pixel:nth-child(123),
+.jar-canvas .pixel:nth-child(124),
+.jar-canvas .pixel:nth-child(125),
+.jar-canvas .pixel:nth-child(111),
+.jar-canvas .pixel:nth-child(112),
+.jar-canvas .pixel:nth-child(113),
+.jar-canvas .pixel:nth-child(114),
+.jar-canvas .pixel:nth-child(115),
+.jar-canvas .pixel:nth-child(101),
+.jar-canvas .pixel:nth-child(102),
+.jar-canvas .pixel:nth-child(103),
+.jar-canvas .pixel:nth-child(104),
+.jar-canvas .pixel:nth-child(105),
+.jar-canvas .pixel:nth-child(91),
+.jar-canvas .pixel:nth-child(92),
+.jar-canvas .pixel:nth-child(93),
+.jar-canvas .pixel:nth-child(94),
+.jar-canvas .pixel:nth-child(95),
+.jar-canvas .pixel:nth-child(81),
+.jar-canvas .pixel:nth-child(82),
+.jar-canvas .pixel:nth-child(83),
+.jar-canvas .pixel:nth-child(71),
+.jar-canvas .pixel:nth-child(72),
+.jar-canvas .pixel:nth-child(73),
+.jar-canvas .pixel:nth-child(61),
+.jar-canvas .pixel:nth-child(62),
+.jar-canvas .pixel:nth-child(63),
+.jar-canvas .pixel:nth-child(51),
+.jar-canvas .pixel:nth-child(52),
+.jar-canvas .pixel:nth-child(42),
+.jar-canvas .pixel:nth-child(43) {
+  background: lightblue;
+  opacity: .5;
+}
+
+.jar-canvas .pixel:nth-child(180),
+.jar-canvas .pixel:nth-child(179),
+.jar-canvas .pixel:nth-child(178),
+.jar-canvas .pixel:nth-child(177),
+.jar-canvas .pixel:nth-child(176),
+.jar-canvas .pixel:nth-child(175),
+.jar-canvas .pixel:nth-child(174),
+.jar-canvas .pixel:nth-child(173),
+.jar-canvas .pixel:nth-child(172),
+.jar-canvas .pixel:nth-child(171) {
+  background: lightblue;
+  opacity: 1;
+}
+
+.jar-canvas .pixel:nth-child(57),
+.jar-canvas .pixel:nth-child(68),
+.jar-canvas .pixel:nth-child(78) {
+  background: #fff;
+}
+
+.jar-cork {
+  width: 125px;
+  top: 80px;
+  height: 100px;
+  background: brown;
+  left: 143px;
+}
+
+.jar-lid {
+  width: 250px;
+  height: 80px;
+  top: 140px;
+  background: lightblue;
+  left: 80px;
+  opacity: .6;
+}
+
+.jar-neck {
+  width: 125px;
+  height: 100px;
+  top: 140px;
+  left: 143px;
+  background: lightblue;
+  opacity: .6;
+}
+
+.jar-container {
+  width: 250px;
+  height: 400px;
+  left: 80px;
+  bottom: 0px;
+}
+
+.jar-container .glass {
+  width: 100%;
+  height: 360px;
+  top: 40px;
+  border-radius: 80px 80px 20px 20px;
+  opacity: .6;
+  z-index: 3;
+}
+
+/*Fairy release*/
+.container.release .jar-cork {
+  -webkit-animation: openCork 3.9s forwards;
+          animation: openCork 3.9s forwards;
+  /*opacity: 0;*/
+}
+
+.container.release .fairy-wrap {
+  -webkit-animation: flyUp 4.5s forwards;
+          animation: flyUp 4.5s forwards;
+}
+
+.container.release #heart-one, .container.release #heart-two, .container.release #heart-three {
+  -webkit-animation: heartbeat 3s 1;
+          animation: heartbeat 3s 1;
+}
+
+.container.release .heart-container .pixel:nth-child(53),
+.container.release .heart-container .pixel:nth-child(44),
+.container.release .heart-container .pixel:nth-child(45),
+.container.release .heart-container .pixel:nth-child(46),
+.container.release .heart-container .pixel:nth-child(35),
+.container.release .heart-container .pixel:nth-child(36),
+.container.release .heart-container .pixel:nth-child(37),
+.container.release .heart-container .pixel:nth-child(38),
+.container.release .heart-container .pixel:nth-child(39),
+.container.release .heart-container .pixel:nth-child(27),
+.container.release .heart-container .pixel:nth-child(28),
+.container.release .heart-container .pixel:nth-child(30),
+.container.release .heart-container .pixel:nth-child(31) {
+  background: red;
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
+}
+
+/*Health*/
+.heart-container {
+  left: 20%;
+  top: 0px;
+  width: 250px;
+  height: 100px;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.heart-container .canvas {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.heart-container .canvas .pixel {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  float: left;
+  -webkit-box-shadow: 0px 0px 1px transparent;
+          box-shadow: 0px 0px 1px transparent;
+}
+
+.heart-container #heart-one {
+  -webkit-animation: heartbeat 1s infinite;
+          animation: heartbeat 1s infinite;
+}
+
+.heart-container #heart-one .pixel:nth-child(53),
+.heart-container #heart-one .pixel:nth-child(44),
+.heart-container #heart-one .pixel:nth-child(45),
+.heart-container #heart-one .pixel:nth-child(46) {
+  background-color: red;
+}
+
+.heart-container .pixel:nth-child(61),
+.heart-container .pixel:nth-child(54),
+.heart-container .pixel:nth-child(52),
+.heart-container .pixel:nth-child(43),
+.heart-container .pixel:nth-child(47),
+.heart-container .pixel:nth-child(40),
+.heart-container .pixel:nth-child(34),
+.heart-container .pixel:nth-child(26),
+.heart-container .pixel:nth-child(32),
+.heart-container .pixel:nth-child(23),
+.heart-container .pixel:nth-child(22),
+.heart-container .pixel:nth-child(19),
+.heart-container .pixel:nth-child(20),
+.heart-container .pixel:nth-child(29) {
+  background: #fff;
+}
+
+.heart-container .pixel:nth-child(53),
+.heart-container .pixel:nth-child(44),
+.heart-container .pixel:nth-child(45),
+.heart-container .pixel:nth-child(46),
+.heart-container .pixel:nth-child(35),
+.heart-container .pixel:nth-child(36),
+.heart-container .pixel:nth-child(37),
+.heart-container .pixel:nth-child(38),
+.heart-container .pixel:nth-child(39),
+.heart-container .pixel:nth-child(27),
+.heart-container .pixel:nth-child(28),
+.heart-container .pixel:nth-child(30),
+.heart-container .pixel:nth-child(31) {
+  background: transparent;
+}
+
+/*Fairy*/
+.fairy-wrap {
+  top: 220px;
+  left: 125px;
+  z-index: 2;
+  -webkit-animation: buzz 8.5s infinite;
+          animation: buzz 8.5s infinite;
+}
+
+.fairy-wrap .fairy {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 100%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.fairy-wrap .wings {
+  width: 40px;
+  height: 40px;
+  left: -30px;
+  border-radius: 85% 0%;
+  background: #f7cdff;
+  -webkit-filter: none !important;
+          filter: none !important;
+}
+
+.fairy-wrap .wings.bottom {
+  top: 20px;
+}
+
+.fairy-wrap .wings.top {
+  top: -20px;
+  border-radius: 0% 85%;
+}
+
+@-webkit-keyframes buzz {
+  0% {
+    left: 125px;
+  }
+  30% {
+    left: 160px;
+  }
+  45% {
+    top: 100px;
+  }
+  60% {
+    left: 70px;
+  }
+  80% {
+    top: 220px;
+  }
+}
+
+@keyframes buzz {
+  0% {
+    left: 125px;
+  }
+  30% {
+    left: 160px;
+  }
+  45% {
+    top: 100px;
+  }
+  60% {
+    left: 70px;
+  }
+  80% {
+    top: 220px;
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes flyUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-650px);
+            transform: translateY(-650px);
+  }
+}
+
+@keyframes flyUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-650px);
+            transform: translateY(-650px);
+  }
+}
+
+@-webkit-keyframes openCork {
+  0% {
+    top: 80px;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  40% {
+    top: 0px;
+    left: 39px;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  75% {
+    top: 40px;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    top: 80px;
+  }
+}
+
+@keyframes openCork {
+  0% {
+    top: 80px;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  40% {
+    top: 0px;
+    left: 39px;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  75% {
+    top: 40px;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    top: 80px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
